@@ -1,0 +1,36 @@
+.form {
+  width: 600px;
+  margin: 100px auto 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 1.5rem 1rem;
+}
+
+input {
+  padding: 12px 30px;
+  background-color: #eee;
+  border: 1px solid grey;
+  border-radius: 20px;
+  outline: none;
+}
+
+button {
+  border-radius: 8px;
+  border: 2px solid darkgreen;
+  background-color: green;
+  color: lightgrey;
+  padding: 10px 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+
+  grid-column-start: 2;
+  justify-self: right;
+  transition: .1s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: limegreen;
+    color: white;
+  }
+}

@@ -1,0 +1,16 @@
+.notification {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+
+  padding: 20px 30px;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+
+  display: grid;
+  grid-auto-flow: row;
+  grid-row-gap: 5px;
+  &--error {
+    background-color: lightcoral;
+  }
+}
