@@ -1,5 +1,6 @@
 
 export const showNotification = (()=>{
+    const notificationDuration = 5000;
     let currentTimeout;
     return(notificationContent) => dispatch => {
         dispatch({
@@ -9,7 +10,7 @@ export const showNotification = (()=>{
         clearTimeout(currentTimeout);
         currentTimeout = setTimeout(() => {
             dispatch(hideNotification())
-        }, 5000)
+        }, notificationDuration)
     };
 })();
 
